@@ -46,6 +46,7 @@ public class ReadDatabase extends AsyncTask<String, Void, String> {
         dataBuffer.append(POST_PARAM_KEYVALUE_SEPARATOR);
         dataBuffer.append(URLEncoder.encode(DESTINATION_METHOD, "UTF-8"));
         */
+        //comment
 
         //Adresse der PHP Schnittstelle für die Verbindung zur MySQL Datenbank
         URL url = new URL("http://10.0.2.2/Gin/read_DB.php");
