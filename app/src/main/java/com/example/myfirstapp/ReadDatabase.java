@@ -46,10 +46,11 @@ public class ReadDatabase extends AsyncTask<String, Void, String> {
         dataBuffer.append(POST_PARAM_KEYVALUE_SEPARATOR);
         dataBuffer.append(URLEncoder.encode(DESTINATION_METHOD, "UTF-8"));
         */
-        //comment
 
+        //comment
+        // 192.168.178.22
         //Adresse der PHP Schnittstelle für die Verbindung zur MySQL Datenbank
-        URL url = new URL("http://10.0.2.2/Gin/read_DB.php");
+        URL url = new URL("http:192.168.178.22/Gin/read_DB.php");
         conn = url.openConnection();
         conn.setDoOutput(true);
         OutputStreamWriter wr = new OutputStreamWriter(conn.getOutputStream());
@@ -61,6 +62,7 @@ public class ReadDatabase extends AsyncTask<String, Void, String> {
      * @return liefert ein String mit dem gelesenen Werten.
      * @throws IOException
      */
+
     private String readResult()throws IOException{
         String result = null;
         //Lesen der Rückgabewerte vom Server
